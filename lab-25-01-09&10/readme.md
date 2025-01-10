@@ -21,7 +21,12 @@ Software degradam, logo são necessários alguns padrões.
     - Filhos tem que ser Substitutos da classe pai.
     - comportamento esperado
   - [ ] **Segregação de Interfaces**
-    - Clientes n"ao devem ser forçados a depender de métodos que não usam.
+    - Clientes não devem ser forçados a depender de métodos que não usam.
+  - [ ] **Inversão de Dependência**
+    - módulos de alto nivel não devem depender de modulos inferiores
+    - usar interfaces
+    - Vantagem: Flexibilidade de mudança
+    - Desvantagem: O cliente não pode usar a intancia, tem alguem que vai injetar.
 
 ------
 * Prova: 23/01 - GRASP PPOO
