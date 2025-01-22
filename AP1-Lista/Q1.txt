@@ -1,0 +1,57 @@
+title This is a title
+User->Frontier: Acessa o sistema
+Frontier-->User: Retorna a tela de login
+User->Frontier: Passa os dados de login e senha
+#
+Frontier->Controller: request de login
+Controller->Entity: Acessa dados
+Controller<--Entity: Retorna dados
+Controller-->Frontier: retorna resultado do login (Positivo)
+
+Frontier-->User:Apresenta tela de administração
+
+Frontier<-User:Acessa cadastro de usuário
+
+Frontier->Controller:Solicita lista de departamentos
+
+Controller->Entity:Solicita dados
+
+Controller<--Entity:retorna dados
+
+Controller-->Frontier:Retorna lista de Departamentos
+
+User<--Frontier:Apresenta Lista de departamentos
+
+
+User->Frontier:Seleciona departamento e \npreenche dados cadastrais
+
+Frontier->Controller:solicita criacão de conta
+
+Controller->Entity: Valida dados
+Controller<--Entity: retorna dados
+Controller->Entity: Adiciona novo funcionario\nao departamento
+
+Controller<--Entity: Retorna sucesso
+
+Controller-->Frontier: Retorna sucesso
+
+User<--Frontier: Retorna sucesso
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#note over Bob,Double click to edit text:Click Help menu for **instructions** and **examples**
+#Bob->(2)Double click to edit text:non-instantaneous message
