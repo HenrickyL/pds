@@ -1,0 +1,39 @@
+title UC:Adicionar um jogo
+
+User->Interface:Clica em "Adiciona Jogo"
+
+Interface->Controller: GetAllEditoras()
+
+Controller->Entity: GetAllEditoras()
+
+Controller<--Entity: return all editoras
+
+Interface<--Controller: 200: return all editoras
+
+Interface->Interface: Monta formulário 
+
+
+Interface-->User: Mostra tela de \nAdicionar Editora
+
+User->Interface: preenche campos \ne seleciona editora
+
+Interface->Controller: AddGame(name, description, editora)
+
+
+Controller->Entity: ValidateGame(name, editora)
+
+Controller<--Entity: return true
+
+
+Controller->Entity: AddGame(name, description, editora)
+
+Controller<--Entity: return success
+
+Interface<--Controller: 201: created
+
+User<--Interface: Apresenta Sucesso ao adicionar jogo.
+
+
+
+
+
