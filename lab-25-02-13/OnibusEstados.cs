@@ -1,0 +1,4 @@
+﻿public enum OnibusEstados
+{
+   CHEGOU_1_PARADA, CHEGOU_2_PARADA, CHEGOU_3_PARADA, CHEGOU_UFC
+}
