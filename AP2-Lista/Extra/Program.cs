@@ -47,7 +47,6 @@ public class Program {
 
 
 
-
         ActivityManager.Instance.StartActivity(activityHigh);
         Console.WriteLine("Chegou o fim da Semana");
         ActivityManager.Instance.StartActivity(activityMedium);
